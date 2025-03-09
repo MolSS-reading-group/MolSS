@@ -1,5 +1,5 @@
 colorScheme = "slate"
-defaultAppearance = "light"
+defaultAppearance = "dark"
 autoSwitchAppearance = true
 enableSearch = false
 enableCodeCopy = false
@@ -29,7 +29,7 @@ showMoreLinkDest = "/posts/"
 cardView = false
 cardViewScreenWidth = false
 layoutBackgroundBlur = false
-homepageImage = "home_bg_v3.gif"
+homepageImage = "bg_image_v2.gif"
 
 [article]
 showDate = true
