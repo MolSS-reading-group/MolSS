@@ -18,8 +18,3 @@ name = "Schedule"
 pageRef = "Schedule"
 weight = 2
 
-[[main]]
-pageRef = "no"
-identifier = "eDHspjsFaU"
-weight = 9999
-
