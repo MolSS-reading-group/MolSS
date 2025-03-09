@@ -1,13 +1,14 @@
 colorScheme = "blowfish"
 defaultAppearance = "light"
 autoSwitchAppearance = true
-enableSearch = true
+enableSearch = false
 enableCodeCopy = false
 replyByEmail = false
 disableImageOptimization = false
 disableTextInHeader = false
 giteaDefaultServer = "https://git.fsfe.org"
 forgejoDefaultServer = "https://v8.next.forgejo.org"
+highlightCurrentMenuArea = true
 
 [header]
 layout = "basic"
@@ -28,7 +29,7 @@ showMoreLinkDest = "/posts/"
 cardView = false
 cardViewScreenWidth = false
 layoutBackgroundBlur = false
-homepageImage = "0001-0500.mp4"
+homepageImage = "0001-0500.gif"
 
 [article]
 showDate = true
