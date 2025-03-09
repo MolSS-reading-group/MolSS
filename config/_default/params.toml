@@ -11,7 +11,7 @@ forgejoDefaultServer = "https://v8.next.forgejo.org"
 highlightCurrentMenuArea = true
 
 [header]
-layout = "basic"
+layout = "fixed-fill-blur"
 
 [footer]
 showMenu = true
@@ -29,7 +29,7 @@ showMoreLinkDest = "/posts/"
 cardView = false
 cardViewScreenWidth = false
 layoutBackgroundBlur = false
-homepageImage = "0001-0500.gif"
+homepageImage = "home_bg_v3.gif"
 
 [article]
 showDate = true

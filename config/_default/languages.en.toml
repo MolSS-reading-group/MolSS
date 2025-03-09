@@ -2,7 +2,7 @@ disabled = false
 languageCode = "en"
 languageName = "English"
 weight = 1
-title = "Machine Learning for Simulations"
+title = "Machine Learning for Sampling and Simulations"
 
 [params]
 displayName = "EN"
