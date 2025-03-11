@@ -1,0 +1,1 @@
+Our reading group convenes regularly, bringing together experts and enthusiasts from around the globe. Sessions include paper discussions, method deep-dives, guest lectures, and presentations of ongoing research. For detailed information regarding upcoming sessions, speakers, topics, and paper listings, please refer to our continuously updated schedule.
