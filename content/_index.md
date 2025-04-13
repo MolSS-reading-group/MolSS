@@ -9,6 +9,7 @@ Welcome 👋. *MolSS* is a weekly-based reading group, which focus on probabilis
   - [Molecule Generation](/Scopes/MG/)
 
 ### Community
-Please join our [Slack](https://molss.slack.com) to keep updated.
+ - Please join our [Slack](https://molss.slack.com) to keep updated.
+ - Find us at by: molss.ml4molecule.gmail.com
 
 </div>
