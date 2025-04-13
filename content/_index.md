@@ -10,6 +10,6 @@ Welcome 👋. *MolSS* is a weekly-based reading group, which focus on probabilis
 
 ### Community
  - Please join our [Slack](https://molss.slack.com) to keep updated.
- - Find us at by: molss.ml4molecule.gmail.com
-
+ - Find us at: [molss.ml4molecule@gmail.com](mailto:molss.ml4molecule@gmail.com)
+ 
 </div>
