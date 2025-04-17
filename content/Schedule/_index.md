@@ -1,1 +1,6 @@
-Our reading group convenes regularly, bringing together experts and enthusiasts from around the globe. Sessions include paper discussions, method deep-dives, guest lectures, and presentations of ongoing research. For detailed information regarding upcoming sessions, speakers, topics, and paper listings, please refer to our continuously updated schedule.
+# Coming Talks
+Every ***Tuesday*** starting from ***4pm GMT***, unless otherwise noted
+- **May 19th, 2025 ---** [José Miguel Hernández-Lobato](https://jmhl.org) (University of Cambridge)
+  - ⚠️ This session will be starting from **3pm** 
+- **May 27th, 2025 ---** [Gábor Csányi](https://www.eng.cam.ac.uk/profiles/gc121) (University of Cambridge)
+
