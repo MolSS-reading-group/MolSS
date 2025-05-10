@@ -28,7 +28,7 @@ showMoreLink = false
 showMoreLinkDest = "/posts/"
 cardView = false
 cardViewScreenWidth = false
-layoutBackgroundBlur = false
+layoutBackgroundBlur = "Enable"
 homepageImage = "bg-v2.gif"
 
 [article]
