@@ -1,0 +1,51 @@
+<div class="flex flex-wrap justify-center gap-6 py-6">
+  {{ $people := slice
+    (dict "name" "Tony RuiKang OuYang" "url" "https://tonyauyeung.github.io" "affiliation" "University of Cambridge" "role" "incoming PhD student" "image" "tony.jpg")
+    (dict "name" "Chen Lin" "url" "https://scholar.google.com/citations?user=rObgGWIAAAAJ&hl=en" "affiliation" "University of Oxford" "role" "PhD student" "image" "chen.jpg")
+    (dict "name" "Jiajun He" "url" "https://jiajunhe98.github.io" "affiliation" "University of Cambridge" "role" "PhD student" "image" "jiajun.jpg")
+    (dict "name" "Rokas Elijošius" "url" "https://scholar.google.co.uk/citations?user=qJzpNhoAAAAJ&hl=lt" "affiliation" "University of Cambridge" "role" "PhD student" "image" "rokas.jpg")
+    (dict "name" "Krisztina Shinkovych" "url" "https://scholar.google.com/citations?user=kEa6ubcAAAAJ&hl=en" "affiliation" "University of Cambridge" "role" "Visiting Researcher" "image" "krisztina.jpg")
+  }}
+
+  {{ range $people }}
+    {{ $person := . }}
+    {{ $img := .image }}
+    {{ $resource := $.Page.Resources.GetMatch $img }}
+    {{ with $resource }}
+      {{ $resized := .Resize "1080x1080" }}
+      <div class="person-card bg-white shadow-md flex flex-col items-center text-center mt-6 mb-6">
+        <div class="w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden flex items-center justify-center">
+          <img src="{{ $resized.RelPermalink }}" alt="{{ $person.name }}" class="w-full h-full object-cover">
+        </div>
+
+        <p class="text-base font-semibold mb-2">
+          <a href="{{ $person.url }}" class="text-blue-600 hover:underline">{{ $person.name }}</a>
+        </p>
+
+        <div class="text-sm leading-none mt-2">
+          <p class="text-gray-700 my-0">{{ $person.affiliation }}</p>
+          <p class="text-gray-500 my-0">{{ $person.role }}</p>
+        </div>
+      </div>
+    {{ end }}
+  {{ end }}
+</div>
+
+<script>
+  /** Make all .person-card elements equal to the width of the widest one */
+  function syncCardWidths () {
+    const cards = [...document.querySelectorAll('.person-card')];
+    if (!cards.length) return;
+
+    // Reset widths first so we measure natural size
+    cards.forEach(card => card.style.width = '');
+
+    const widest = Math.max(...cards.map(c => c.getBoundingClientRect().width));
+    cards.forEach(card => { card.style.width = widest + 'px'; });
+  }
+
+  // Run after everything (including images) has loaded
+  window.addEventListener('load', syncCardWidths);
+  // Re-run if viewport size changes
+  window.addEventListener('resize', syncCardWidths);
+</script>
