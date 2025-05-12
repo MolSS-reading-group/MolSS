@@ -6,10 +6,11 @@ MolSS is a biweekly reading group that focuses on probabilistic machine learning
 
 Each MolSS session is run in a **tutorial-like** format, where the speaker ideally introduces topics they are experienced in and passionate about for 20–30 minutes, followed by a discussion session lasting another 20–30 minutes.
 
-### Our Scopes
+<!-- ### Our Scopes
   - [Sampling Methods and Neural Samplers]({{< relref "Scopes/SamplingMethod/_index.md" >}})
   - [Molecular Dynamics](./Scopes/MD/)
-  - [Molecule Generation](./Scopes/MG/)
+  - Machine Learning Force Field
+  - [Molecule Generation](./Scopes/MG/) -->
 
 ### Community
  - Please join our [Slack](https://molss.slack.com) to keep updated 🚀
