@@ -3,4 +3,4 @@
   - Sequential Monte Carlo (SMC)
   - Parallel Tempering (PT; *a.k.a.* Replica Exchange)
 
-<span style="font-size:1.5em; font-weight:bold;">Neural Sampler</span> amortises traditional sampling methods by employing machine learning techniques. Recently developed methods include ...
+<span style="font-size:1.5em; font-weight:bold;">Neural Sampler</span> amortises traditional sampling methods by employing machine learning techniques.
