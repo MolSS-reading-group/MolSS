@@ -1,5 +1,4 @@
 ---
-title: "Coming Talks"
 layout: "simple"
 showMeta: false
 showDate: false
