@@ -13,7 +13,7 @@
     {{ $resource := $.Page.Resources.GetMatch $img }}
     {{ with $resource }}
       {{ $resized := .Resize "1080x1080" }}
-      <div class="person-card bg-white shadow-md flex flex-col items-center text-center mt-6 mb-6">
+      <div class="person-card bg-white shadow-md flex flex-col items-center text-center mt-8 mb-8">
         <div class="w-24 h-24 md:w-28 md:h-28 rounded-full overflow-hidden flex items-center justify-center">
           <img src="{{ $resized.RelPermalink }}" alt="{{ $person.name }}" class="w-full h-full object-cover">
         </div>
