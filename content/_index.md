@@ -13,10 +13,10 @@ Each MolSS session is run in a **tutorial-like** format, where the speaker ideal
   - [Molecule Generation](./Scopes/MG/) -->
 
 ### Community
- - Please join our [Slack](https://molss.slack.com) to keep updated 🚀
+ - Please join our [Slack](https://join.slack.com/t/molss/shared_invite/zt-35u93vepd-H83ftzwBbPCYY31jHcnM8A) to keep updated 🚀
  - Contact us: [molss.ml4molecule@gmail.com](mailto:molss.ml4molecule@gmail.com) 📧
  - Subscribe our [YouTube](https://www.youtube.com/@molss.ml4molecule) channel for latest recordings 🔥
- - Suggest someone or interested topics through our [Slack](https://molss.slack.com)!
+ - Suggest someone or interested topics through our [Slack](https://join.slack.com/t/molss/shared_invite/zt-35u93vepd-H83ftzwBbPCYY31jHcnM8A)!
  - Volunteer for giving a talk through [Slack](https://molss.slack.com) or [email](mailto:molss.ml4molecule@gmail.com)!
 
 
