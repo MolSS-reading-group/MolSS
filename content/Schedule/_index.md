@@ -13,7 +13,7 @@ Every ***Tuesday*** starting from ***4pm GMT***, unless otherwise noted
   - ⚠️ This session will be starting from **5pm** 
 - **July 1st, 2025 ---** [Grigory Bartosh](https://grigorybartosh.github.io) (University of Amsterdam)
 
-- **July 15th, 2025 ---** To be confirmed
+- **July 15th, 2025 ---** ICML week
 
-- **July 29th, 2025 ---** [Alexander Tong](https://www.alextong.net) (Duke University)
+<!-- - **July 29th, 2025 ---** [Alexander Tong](https://www.alextong.net) (Duke University) -->
 
