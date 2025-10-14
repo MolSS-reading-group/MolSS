@@ -21,5 +21,5 @@ Each MolSS session is **one hour** long, consisting of a 30–50 minute presenta
 
 
 ### Acknowledgement
-We acknowledge the support from [José Miguel Hernández-Lobato](https://jmhl.org) and the [GenAI Hub](https://www.genai.ac.uk) 🤖!
+We acknowledge the support from [José Miguel Hernández-Lobato](https://jmhl.org) and the [GenAI Hub](https://www.genai.ac.uk) 🤖! We also acknowledge Violet Ai's help for building this wonderful website!
 </div>
