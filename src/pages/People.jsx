@@ -78,7 +78,11 @@ export default function People() {
               className="glass-panel person-card"
             >
               <div className="person-image-wrapper">
-                <img src={person.image} alt={person.name} className="person-img" />
+                <img 
+                  src={`${import.meta.env.BASE_URL}${person.image.replace(/^\//, '')}`} 
+                  alt={person.name} 
+                  className="person-img" 
+                />
               </div>
 
               <div className="person-info">
