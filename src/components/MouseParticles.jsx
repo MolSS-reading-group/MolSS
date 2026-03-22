@@ -128,8 +128,11 @@ export default function MouseParticles() {
             let speed = Math.sqrt(mouse.vx * mouse.vx + mouse.vy * mouse.vy);
             distanceAccumulator += speed;
 
-            // Spawn exactly 1 sequence of particles every 60 pixels of physical mouse movement
-            if (distanceAccumulator > 40 && particles.length < MAX_PARTICLES) {
+            // Lowered the distance threshold from 60 to 15.
+            // 15 pixels is smaller than the physical radius of the particles,
+            // meaning they will visually overlap and chain together, restoring the "smooth"
+            // continuous liquid trail while still preventing hardware-linked particle bursts!
+            if (distanceAccumulator > 15 && particles.length < MAX_PARTICLES) {
                 distanceAccumulator = 0;
                 let numSpawn = 1;
 
@@ -157,11 +160,10 @@ export default function MouseParticles() {
                         rx: Math.random() * Math.PI * 2,
                         ry: Math.random() * Math.PI * 2,
                         rz: Math.random() * Math.PI * 2,
-
-                        // 3D tumbling velocities
+                        // Angular momentum (tumbling rates)
                         drx: (Math.random() - 0.5) * tumbleSpeed,
                         dry: (Math.random() - 0.5) * tumbleSpeed,
-                        drz: (Math.random() - 0.5) * tumbleSpeed
+                        drz: (Math.random() - 0.5) * tumbleSpeed,
                     });
                 }
             }
