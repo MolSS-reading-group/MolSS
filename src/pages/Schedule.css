@@ -1,0 +1,152 @@
+.pg-topbar-offset {
+  padding-top: 6rem;
+}
+
+.bg-schedule {
+  color: var(--accent-primary);
+  display: inline-flex;
+}
+
+.timeline-container {
+  max-width: 800px;
+  margin: 0 auto;
+  position: relative;
+  padding: 2rem 0;
+}
+
+.timeline-container::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 120px;
+  width: 2px;
+  background: var(--border-color);
+}
+
+.timeline-item {
+  position: relative;
+  display: flex;
+  margin-bottom: 2rem;
+  align-items: flex-start;
+}
+
+.timeline-date {
+  width: 120px;
+  padding-right: 2rem;
+  text-align: right;
+  padding-top: 1.25rem;
+}
+
+.date-text {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text-primary);
+}
+
+.timeline-dot {
+  position: absolute;
+  left: 120px;
+  transform: translateX(-50%);
+  top: 1.5rem;
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  background: var(--bg-dark);
+  border: 2px solid var(--accent-primary);
+  z-index: 2;
+  transition: all 0.2s ease;
+}
+
+.timeline-item:hover .timeline-dot {
+  background: var(--accent-primary);
+  box-shadow: 0 0 0 4px rgba(168, 199, 250, 0.2);
+}
+
+.timeline-card {
+  flex: 1;
+  margin-left: 2rem;
+  padding: 1.5rem;
+}
+
+.speaker-name {
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+  font-weight: 500;
+}
+
+.hover-link {
+  color: var(--text-primary);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: color 0.15s ease;
+}
+
+.hover-link:hover {
+  color: var(--accent-primary);
+}
+
+.inline-icon {
+  opacity: 0;
+  transform: translateX(-4px);
+  transition: all 0.2s ease;
+}
+
+.hover-link:hover .inline-icon {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.speaker-affiliation {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.card-meta {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--border-color);
+}
+
+.meta-item {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: var(--text-secondary);
+}
+
+.text-accent {
+  color: var(--accent-primary);
+}
+
+.warning-text {
+  color: #F8D98C; /* Softer yellow for dark mode */
+}
+
+@media (max-width: 768px) {
+  .timeline-container::before {
+    left: 20px;
+  }
+  .timeline-date {
+    position: absolute;
+    top: -20px;
+    left: 45px;
+    width: auto;
+    padding: 0;
+    text-align: left;
+  }
+  .timeline-dot {
+    left: 20px;
+  }
+  .timeline-card {
+    margin-left: 45px;
+    margin-top: 1rem;
+  }
+}

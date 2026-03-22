@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Google+Sans:wght@400;500;700&family=Inter:wght@400;500;600;700&display=swap');
+
+:root {
+  /* Antigravity / Google Dark Theme Palette */
+  --bg-dark: #121317;
+  --bg-card: #18191D;
+  --bg-card-hover: #212226;
+  --bg-card-elevated: #212226;
+  
+  --text-primary: #FFFFFF;
+  --text-secondary: #B2BBC5;
+  --text-muted: #8E918F;
+  
+  --accent-primary: #3279F9; /* Google Blue / Gemini Sparkle */
+  --accent-secondary: #3279F9; /* Lighter blue */
+  --accent-tertiary: #A8C7FA;
+  --accent-glow: rgba(50, 121, 249, 0.15);
+  
+  --border-color: rgba(230, 234, 240, 0.06);
+  --border-focus: #3279F9;
+  
+  --shadow-sm: 0 1px 2px 0 rgba(0, 0, 0, 0.3), 0 1px 3px 1px rgba(0, 0, 0, 0.15);
+  --shadow-glow: 0 24px 38px 3px rgba(0, 0, 0, 0.14),0 9px 46px 8px rgba(0, 0, 0, 0.12),0 11px 15px -7px rgba(0, 0, 0, 0.2);
+  
+  /* Fallback to Inter if Google Sans fails to load, but prefer Google Sans for Antigravity */
+  --font-sans: 'Google Sans', 'Inter', -apple-system, sans-serif;
+  --font-heading: 'Google Sans', 'Inter', -apple-system, sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--bg-dark);
+  color: var(--text-primary);
+  font-size: 17.5px;
+  line-height: 25.38px;
+  min-height: 100vh;
+  overflow-x: hidden;
+  -webkit-font-smoothing: antialiased;
+  letter-spacing: 0.18px;
+}
+
+/* Typography */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-heading);
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: -0.5px;
+}
+
+.text-gradient {
+  /* For Antigravity, we remove the crazy gradient and use the solid accent color, 
+     but maybe a very subtle shift from primary to secondary for flair */
+  background: linear-gradient(90deg, var(--accent-primary) 0%, var(--accent-secondary) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  display: inline-block;
+  padding-bottom: 0.2em; /* Prevents descenders from getting cut off by background clip */
+}
+
+/* Antigravity Surfaces */
+.glass-panel {
+  position: relative;
+  background: linear-gradient(180deg, rgba(30, 32, 38, 0.4) 0%, rgba(30, 32, 38, 0) 100%);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-top-color: rgba(255, 255, 255, 0.12);
+  border-radius: 24px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s cubic-bezier(0.2, 0, 0, 1);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.glass-panel:hover {
+  background: linear-gradient(180deg, rgba(50, 121, 249, 0.08) 0%, rgba(30, 32, 38, 0) 100%);
+  border-color: rgba(50, 121, 249, 0.3);
+  transform: translateY(-4px);
+  box-shadow: 0 12px 40px rgba(50, 121, 249, 0.15);
+}
+
+.glass-nav {
+  border-bottom: none;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  background: rgba(18, 19, 23, 0.9);
+}
+
+/* Layout */
+.container {
+  width: 100%;
+  max-width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+
+.section {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--bg-dark);
+}
+::-webkit-scrollbar-thumb {
+  background: #444746;
+  border-radius: 10px;
+  border: 2px solid var(--bg-dark);
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #5F6368;
+}
+
+/* Misc Utilities */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.mt-2 { margin-top: 0.5rem; }
+.mt-4 { margin-top: 1rem; }
+.mt-6 { margin-top: 1.5rem; }
+.mt-8 { margin-top: 2rem; }
+.mt-12 { margin-top: 3rem; }
+.mb-2 { margin-bottom: 0.5rem; }
+.mb-4 { margin-bottom: 1rem; }
+.mb-6 { margin-bottom: 1.5rem; }
+.mb-8 { margin-bottom: 2rem; }
+.mb-12 { margin-bottom: 3rem; }
+.mb-16 { margin-bottom: 4rem; }
+.mb-20 { margin-bottom: 5rem; }
+.mb-24 { margin-bottom: 6rem; }
+
+a {
+  color: var(--accent-primary);
+  text-decoration: none;
+  transition: color 0.15s ease;
+}
+a:hover {
+  color: var(--accent-secondary);
+}
+
+button, .btn {
+  font-family: var(--font-sans);
+  font-weight: 500;
+  cursor: pointer;
+  letter-spacing: 0.1px;
+}
