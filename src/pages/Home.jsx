@@ -21,7 +21,7 @@ export default function Home() {
             style={{ display: 'flex', flexDirection: 'column', gap: '0' }}
           >
             <span>Machine Learning for</span>
-            <span style={{ whiteSpace: 'nowrap' }}><span style={{ color: 'var(--accent-primary)' }}>Mol</span>ecule <span style={{ color: 'var(--accent-primary)' }}>S</span>imulations &amp; <span style={{ color: 'var(--accent-primary)' }}>S</span>ampler</span>
+            <span><span style={{ color: 'var(--accent-primary)' }}>Mol</span>ecule <span style={{ color: 'var(--accent-primary)' }}>S</span>imulations &amp; <span style={{ color: 'var(--accent-primary)' }}>S</span>ampler</span>
             <span>Reading Group</span>
           </motion.h1>
 
