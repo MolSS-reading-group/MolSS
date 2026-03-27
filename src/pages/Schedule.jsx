@@ -169,8 +169,12 @@ export default function Schedule() {
                     <a href={talk.link} target="_blank" rel="noopener noreferrer" className="hover-link">
                       {talk.speaker}
                     </a>
-                    {talk.title && `: ${talk.title}`}
                   </h3>
+                  {talk.title && (
+                    <div className="speaker-title">
+                      {talk.title}
+                    </div>
+                  )}
                   <div className="speaker-affiliation">
                     <span className="text-secondary">{talk.affiliation}</span>
                   </div>
