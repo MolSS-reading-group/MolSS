@@ -134,6 +134,30 @@ const TALKS = [
     affiliation: "Microsoft Research",
     link: "https://yuxie.notion.site/Welcome-to-Yu-Xie-s-homepage-9e0a4ca2f0e14fafb04f7f2c2ed4fae7",
     title: "Enhanced Diffusion Sampling: Efficient Rare Event Sampling and Free Energy Calculation with Diffusion Models"
+  },
+  {
+    date: "May 12th, 2026",
+    time: "4pm–5pm UK",
+    speaker: "Michael Plainer, Winfried Ripken & Gregor Lied",
+    affiliation: "Freie Universität Berlin & TU Berlin",
+    link: "https://arxiv.org/abs/2601.22123",
+    title: "Learning Hamiltonian Flow Maps"
+  },
+  {
+    date: "June 16th, 2026",
+    time: "4pm–5pm UK",
+    speaker: "Kevin Lam",
+    affiliation: "University of Oxford",
+    link: "https://scholar.google.com/citations?user=wF73WywAAAAJ&hl=en",
+    title: "Metropolis-Adjusted Diffusion Models"
+  },
+  {
+    date: "June 23rd, 2026",
+    time: "4pm–5pm UK",
+    speaker: "Maximilian Schebek",
+    affiliation: "Freie Universität Berlin",
+    link: "https://scholar.google.com/citations?user=SO-9kN8AAAAJ",
+    title: "Generative models for equilibrium sampling and free energy estimation in condensed matter"
   }
 ];
 

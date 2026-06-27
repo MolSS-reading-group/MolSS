@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import SectionLayout from '../components/SectionLayout';
-import { ExternalLink, Users } from 'lucide-react';
 import './People.css';
 
 const PEOPLE = [
@@ -18,43 +17,47 @@ const PEOPLE = [
     affiliation: "University of Cambridge",
     role: "PhD student",
     image: "/people/jiajun.jpg"
-  },
+  }
+];
+
+const ACKNOWLEDGEMENT_PEOPLE = [
   {
     name: "Chen Lin",
     url: "https://scholar.google.com/citations?user=rObgGWIAAAAJ&hl=en",
-    affiliation: "Isomorphic Labs",
-    role: "Research Scientist",
-    image: "/people/chen.jpg"
   },
   {
     name: "Weilong Chen",
     url: "https://www.epc.ed.tum.de/en/mfm/people/weilong-chen/",
-    affiliation: "Technical University of Munich",
-    role: "PhD student",
-    image: "/people/weilong.jpg"
   },
   {
     name: "Rokas Elijošius",
     url: "https://scholar.google.co.uk/citations?user=qJzpNhoAAAAJ&hl=lt",
-    affiliation: "University of Cambridge",
-    role: "PhD student",
-    image: "/people/rokas.jpg"
   },
   {
     name: "Krisztina Shinkovych",
     url: "https://scholar.google.com/citations?user=kEa6ubcAAAAJ&hl=en",
-    affiliation: "University of Cambridge",
-    role: "Visiting Researcher",
-    image: "/people/krisztina.jpg"
   },
   {
     name: "Luran Wang",
     url: "https://www.linkedin.com/in/luran-wang-b45262254/?originalSubdomain=uk",
-    affiliation: "Massachusetts Institute of Technology",
-    role: "incoming PhD student",
-    image: "/people/luran.jpg"
-  }
+  },
 ];
+
+function AcknowledgementNames({ people }) {
+  return people.map((person, index) => (
+    <React.Fragment key={person.name}>
+      {index > 0 && (index === people.length - 1 ? " and " : ", ")}
+      <a
+        href={person.url}
+        target="_blank"
+        rel="noopener noreferrer"
+        className="acknowledgement-link"
+      >
+        {person.name}
+      </a>
+    </React.Fragment>
+  ));
+}
 
 export default function People() {
   return (
@@ -63,7 +66,7 @@ export default function People() {
         <div className="text-center mb-12">
           <h1 className="hero-title text-gradient">Organizers</h1>
           <p className="text-muted mt-4 max-w-2xl mx-auto text-lg">
-            Meet the team behind the MolSS reading group.
+            main organizers
           </p>
         </div>
 
@@ -96,6 +99,13 @@ export default function People() {
               </div>
             </motion.div>
           ))}
+        </div>
+
+        <div className="acknowledgement-section text-center">
+          <h2 className="acknowledgement-title">Acknowledgement</h2>
+          <p className="text-muted mt-4 max-w-2xl mx-auto text-lg">
+            We also thank <AcknowledgementNames people={ACKNOWLEDGEMENT_PEOPLE} /> for helping to invite speakers.
+          </p>
         </div>
       </SectionLayout>
     </div>
